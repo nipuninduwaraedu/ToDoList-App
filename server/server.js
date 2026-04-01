@@ -1,12 +1,11 @@
 import express from "express";
-import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import todoRoutes from "./routes/todoRoutes.js";
 
-donenv.config();
+dotenv.config();
 connectDB();
 
 const app = express();
